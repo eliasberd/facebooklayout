@@ -1,0 +1,167 @@
+/*.border{
+    border: 1px solid black;
+}*/
+
+body{
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color:#f1f2f6;
+
+    
+}
+
+header * {
+    display: flex;
+    
+}
+
+header{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px #ccc;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+header > div{
+    align-items: center;
+
+}   
+
+nav{
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+   
+    
+}
+
+input{
+    height: 1.75rem;
+    max-width: 195px;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    border-style: hidden;
+    background-color:#f1f2f6;
+}
+
+header > div > section{
+    min-width: 85px;
+}
+
+
+header > nav > ul> li{
+    min-width: 110px;
+    
+}
+header > nav > ul> li:hover{
+    color: blue;
+    cursor:pointer;
+}
+header > div > ul > li{
+    min-width: 70px;
+}
+
+#extra_padding{
+    padding: 20px;
+    background-color: white;
+    border-radius: 1.625rem;
+}
+#content_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f1f2f6;
+    border: 1px solid black;
+    margin-top: 20px;
+   
+}
+
+#content_main ul{
+    list-style: none;
+}
+
+#leftside{
+    max-width: 25%;
+}
+#leftside li{
+    margin-bottom: 20px;
+    font-weight: 750;
+}
+
+#leftside img{
+    position: relative;
+    top: 10px;
+    bottom: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+main{
+    padding: 32px;
+    padding: 32px;
+    max-width: 55%;
+    
+   
+}
+
+main *{
+    display: flex;
+}
+
+
+#stories{
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#icons_stories{
+    font-weight: 750;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+  
+}
+
+main span:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+
+#center_story{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+
+.stories_made{
+    display: flex;
+    flex-direction: row;
+    background-color: white
+
+}
+#rightside{
+    max-width: 20%;
+}
+ 
+.square{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 115px;
+    height: 200px;
+    border: 2px black;
+    border-style: solid;
+    background-color:#f1f2f6;
+}
