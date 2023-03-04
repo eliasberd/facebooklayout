@@ -1,6 +1,3 @@
-/*.border{
-    border: 1px solid black;
-}*/
 
 body{
     margin: 0px;
@@ -26,6 +23,8 @@ header{
     margin: 0px;
     padding-left: 20px;
     padding-right: 20px;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -33,6 +32,10 @@ header > div{
     align-items: center;
 
 }   
+
+header > section{
+    align-items: center;
+}
 
 nav{
     align-items: center;
@@ -42,7 +45,7 @@ nav{
     
 }
 
-input{
+header input{
     height: 1.75rem;
     max-width: 195px;
     border-radius: 1.625rem;
@@ -64,21 +67,26 @@ header > nav > ul> li:hover{
     color: blue;
     cursor:pointer;
 }
-header > div > ul > li{
+header > section > ul > li{
     min-width: 70px;
 }
 
-#extra_padding{
+header>section>ul>li:hover{
+    color: blue;
+    cursor:pointer;
+}
+.extra_padding{
     padding: 20px;
     background-color: white;
     border-radius: 1.625rem;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 5px #ccc;
 }
 #content_main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #f1f2f6;
-    border: 1px solid black;
     margin-top: 20px;
    
 }
@@ -89,6 +97,7 @@ header > div > ul > li{
 
 #leftside{
     max-width: 25%;
+
 }
 #leftside li{
     margin-bottom: 20px;
@@ -104,6 +113,11 @@ header > div > ul > li{
     border-radius: 50%;
 }
 
+#leftside li:hover{
+    background-color: #ebebeb;
+    color: blue;
+    cursor: pointer;
+}
 
 main{
     padding: 32px;
@@ -129,12 +143,12 @@ main *{
     display: flex;
     justify-content: center;
     height: 40px;
-  
 }
 
 main span:hover{
     color:blue;
     cursor: pointer;
+    background-color: #ebebeb;
 }
 
 
@@ -147,6 +161,7 @@ main span:hover{
 .stories_made{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: white
 
 }
@@ -164,4 +179,89 @@ main span:hover{
     border: 2px black;
     border-style: solid;
     background-color:#f1f2f6;
+}
+#container_user{
+    display: flex;
+    flex-direction: column;
+;
+}
+#user_mind{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+#mind input{
+    height: 1.9rem;
+    width: 395px;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    border-style: hidden;
+    background-color:#f1f2f6;
+    margin-left: 3px;
+    font-size: 15px;
+    
+}
+
+#user_mind img{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#below{
+    display: flex;
+    font-weight: 100;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#profile_details{
+    margin-bottom: 5px;
+}
+#post_details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    font-weight: 700;
+
+}
+
+
+#profile_details img{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 5px;
+    bottom: 5px;
+}
+
+#date{
+    font-weight: 100;
+    font-size: 14px;
+}
+
+#menu{
+    margin-left: 200px;
+}
+#content{
+    margin-bottom: 20px;
+}
+#emotes{
+    font-weight: 100;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+/*.border{
+    border: 2px solid black;
 }
