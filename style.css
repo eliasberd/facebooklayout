@@ -54,9 +54,6 @@ header input{
     background-color:#f1f2f6;
 }
 
-header > div > section{
-    min-width: 85px;
-}
 
 
 header > nav > ul> li{
@@ -68,13 +65,16 @@ header > nav > ul> li:hover{
     cursor:pointer;
 }
 header > section > ul > li{
-    min-width: 70px;
+    min-width: 65px;
 }
 
 header>section>ul>li:hover{
     color: blue;
     cursor:pointer;
 }
+
+
+
 .extra_padding{
     padding: 20px;
     background-color: white;
@@ -97,13 +97,27 @@ header>section>ul>li:hover{
 
 #leftside{
     max-width: 25%;
+    display: flex;
+    flex-direction: column;
 
 }
 #leftside li{
     margin-bottom: 20px;
     font-weight: 750;
 }
+ #footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    
+ }
 
+ #footer span{
+    flex-direction: row;
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 20px;
+ }
 #leftside img{
     position: relative;
     top: 10px;
@@ -112,7 +126,11 @@ header>section>ul>li:hover{
     width: 35px;
     border-radius: 50%;
 }
+ #footer span:hover{
+    text-decoration: underline;
+    cursor: pointer;
 
+ }
 #leftside li:hover{
     background-color: #ebebeb;
     color: blue;
@@ -165,9 +183,7 @@ main span:hover{
     background-color: white
 
 }
-#rightside{
-    max-width: 20%;
-}
+
  
 .square{
     margin-top: 5px;
@@ -261,6 +277,67 @@ main span:hover{
     justify-content: space-between;
     margin-left: 45px;
     margin-right: 45px;
+}
+
+.container_aside{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 3px 0px #ebebeb;
+    height: 50px;
+   
+}
+
+#rightside{
+    margin-top: 20px;
+    max-width: 20%;
+    margin-right:45px;
+    
+}
+#contacts_header{
+    display: flex;
+    font-weight: 700;
+    margin-right: 40px;
+    align-items: center;
+}
+
+#contacts_icons{
+    display: flex;
+    display: row;
+    font-size: 15px;
+    align-items: center;
+   
+}
+
+#contacts_icons div{
+    margin-right: 20px;
+}
+#contact_names{
+    font-weight: 500;
+    
+}
+
+#contact_names ul{
+    padding: 0;
+    margin: 0;
+}
+#contact_names li{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#contact_names img{
+    position: relative;
+    top: 10px;
+    bottom: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.logo{
+    height: 35px;
+    width: 35px;
 }
 /*.border{
     border: 2px solid black;
